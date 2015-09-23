@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+    <item
+        android:id="@+id/action_like"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/home_favorite"
+        android:title="Favorite"/>
+
+    <item
+        android:id="@+id/action_comment"
+        android:title="Comment"
+        android:icon="@drawable/home_comment"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        android:icon="@drawable/home_add"
+        android:showAsAction="always"/>
+
+</menu>

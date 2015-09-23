@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:descendantFocusability="beforeDescendants"
+    tools:ignore="overdraw">
+
+
+
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:descendantFocusability="afterDescendants">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:descendantFocusability="afterDescendants">
+
+                <TextView
+                    android:id="@+id/music_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MyMusic"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category: "
+                        />
+
+                    <TextView
+                        android:id="@+id/music_genre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MyMusic_genre"
+                        />
+                 </LinearLayout>
+
+
+                <View
+                    android:layout_width="242dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#c0c0c0"/>
+
+                <RatingBar
+                    android:id="@+id/music_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/music_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_communities"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+</LinearLayout>
+

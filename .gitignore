@@ -1,0 +1,10 @@
+/*/out
+/*/*/build
+/*/*/production
+*.iws
+*.ipr
+*~
+*.swp
+*/.gradle
+*/.idea
+app/build/*

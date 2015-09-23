@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#d3d3d3"
+    tools:ignore="overdraw">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="#e2e2e2"
+        android:fadingEdge="none"
+        android:fitsSystemWindows="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:divider="@null"
+        android:dividerHeight="10dp">
+    </ListView>
+
+
+
+     <!--<ImageButton
+            android:id="@+id/btn_addmusic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ic_photos"/>-->
+
+
+
+</FrameLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/home_music_playlist"/>
+
+            <Spinner
+                android:id="@+id/spinner_genre"
+                android:layout_width="138dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/add_music_lyrics_camera"
+                />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:background="@null"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/music_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Title | Description"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/music_lyrics"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:maxLines="5"
+            android:hint="I love you because I miss you\nI love you because I need you\nI love you because I care you"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/music_text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|right"
+        android:text="80 words"/>
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/white"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contributors"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/music_contributer_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/contributor_item"
+                        android:layout_height="60dp"
+                        android:layout_width="60dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/contributors_profile_add_musicslyrics"/>
+
+                    <TextView
+                        android:id="@+id/contributor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Henry"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/btn_action_add_contributor"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/add_contributors"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:layout_gravity="right"/>
+
+
+</LinearLayout>

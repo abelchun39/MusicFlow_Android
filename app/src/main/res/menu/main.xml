@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+    <item
+        android:id="@+id/action_refresh"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/home_notification_2"
+        android:title="Refresh"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Add"
+        android:icon="@drawable/home_add"
+        app:showAsAction="always">
+<menu>
+
+
+    <item
+        android:id="@+id/action_lyric"
+        android:title="Write Lyrics"
+        android:icon="@drawable/write_lyrics"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_record"
+        android:title="Music Record"
+        android:icon="@drawable/music_record"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_sing"
+        android:title="Sing Songs"
+        android:icon="@drawable/sing_songs"
+        app:showAsAction="always"/>
+
+</menu>
+
+
+
+        </item>
+
+</menu>

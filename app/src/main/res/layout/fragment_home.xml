@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:headerDividersEnabled="true"
+                android:footerDividersEnabled="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:background="#e2e2e2"
+                android:fadingEdge="none"
+                android:fitsSystemWindows="true"
+                android:scrollbarStyle="outsideOverlay"
+                android:divider="@null"
+                android:dividerHeight="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1">
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:background="#99000000"/>
+        <TextView
+            android:text="BEST FLOW"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:rotation="90"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:typeface="sans"
+        />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:text="HOT TREND"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#99000000"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    />
+               <!-- <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/timetosleep"/>-->
+
+                <TextView
+                    android:text="TOP WEEK"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:background="#99000000"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:typeface="sans"
+                    />
+
+            <!--<TextView
+
+                    android:text="Time To Sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#80FFFFFF"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:typeface="sans"
+             />-->
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:src="@drawable/ic_photos"/>
+
+            <TextView
+                android:text="Both of us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/img_photo"
+                android:background="#99000000"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:typeface="sans"/>
+
+        </RelativeLayout>
+
+
+    </ViewFlipper>
+
+
+
+    &lt;!&ndash;<TextView
+        android:id="@+id/txtLabel"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:text="Home View"/>
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/ic_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>&ndash;&gt;
+    
+
+</LinearLayout>-->

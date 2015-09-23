@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="horizontal_item" type="id"/>
+    <item name="horizontal_item1" type="id"/>
+    <item name="horizontal_item2" type="id"/>
+</resources>

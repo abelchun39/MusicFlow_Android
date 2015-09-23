@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">astrohackathon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+     <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Live Stream</item>
+        <item >Draft</item>
+        <item >i Challenge</item>
+        <item >Favorites</item>
+        <item >Setting</item>
+        <item >Competition</item>
+        <item >Log Out</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/live_stream</item>
+        <item>@drawable/draft</item>
+        <item>@drawable/i_challenge</item>
+        <item>@drawable/favorite</item>
+        <item>@drawable/setting</item>
+        <item>@drawable/competition</item>
+        <item>@drawable/log_out</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+</resources>

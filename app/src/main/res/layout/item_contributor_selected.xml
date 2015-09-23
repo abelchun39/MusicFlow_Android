@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/contributor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_home"/>
+
+        <ImageButton
+            android:id="@+id/contributor_action_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignBottom="@+id/contributor_image"
+            android:layout_marginBottom="41dp"
+            android:layout_alignRight="@+id/contributor_image"
+            android:layout_alignEnd="@+id/contributor_image" />
+
+    </RelativeLayout>

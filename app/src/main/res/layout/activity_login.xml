@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_intro"
+    android:background="@drawable/background">
+
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="300dp"
+    android:id="@+id/imageView"
+    android:padding="30dp"
+    android:src="@drawable/bgimage"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_above="@+id/linearLayout1" />
+
+    <LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="false"
+    android:layout_centerVertical="false"
+    android:orientation="vertical"
+    android:padding="48dp" >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/login_form"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColor="#AAAAAA"
+        android:width="292dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_form"
+        android:ems="10"
+        android:hint="Password"
+        android:password="true"
+
+        android:padding="8dp"
+        android:textColor="#AAAAAA"
+        android:width="292dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="0.12"
+        android:background="@drawable/login_button"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:width="292dp" />
+
+    <Button
+        android:id="@+id/btn_loginfacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="0.12"
+        android:background="@drawable/facebook_button"
+        android:padding="10dp"
+        android:text="Login with Facebook"
+        android:textColor="@android:color/white"
+        android:width="292dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Signing in..."
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
